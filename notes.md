@@ -21,4 +21,11 @@
     echo bye>ftp.txt
  Ftp -v -n -s:ftp.txt
 
-○
+#automation enumeration
+
+○ windows privesc check >> check system misconfiguration
+○ watson >> .net app : find KBs(knownlege base) >> check patchs, updates
+○ sherlok >> like wayson in powershell script
+○ powerup >> token - services - dll hijacking - registery
+○ windows exploit suggester >> patchs vs microsost vuln db
+○ WinPEAS exe bat
