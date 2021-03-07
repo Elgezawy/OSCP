@@ -35,3 +35,11 @@ wafwoof - nmap script >> for detect waf
 wget -r / httrack url >> dowload website for offline scanning
 whatweb >> info about website
 whois >> info about domains / registeration
+
+
+
+
+
+
+
+  
